@@ -1,0 +1,131 @@
+.share-stack-card {
+  background: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s;
+}
+
+.share-stack-card:hover {
+  border-color: #9013fe;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 1rem;
+  background: white !important;
+  border: none;
+  border-bottom: 1px solid #f3f4f6;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 0;
+}
+
+.share-stack-card .card-header {
+  background: white !important;
+}
+
+.share-stack-card .card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(144, 19, 254, 0.1);
+  color: #9013fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.header-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-stack-card .card-title,
+.share-stack-card h3.card-title,
+.share-stack-card .card-header h3 {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  margin: 0 !important;
+}
+
+.points-badge {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card-content {
+  background: transparent;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card-description-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem;
+  flex-wrap: nowrap !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-weight: 500;
+  background: transparent;
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+  display: block;
+}
+
+.share-button {
+  padding: 8px 16px;
+  background: #eef2ff !important;
+  color: #9013fe !important;
+  border: none !important;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.share-button:hover {
+  background: #9013fe;
+  color: white;
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+

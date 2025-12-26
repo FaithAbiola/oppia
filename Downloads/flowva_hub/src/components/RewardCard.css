@@ -1,0 +1,139 @@
+.reward-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.reward-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.reward-card.claimed {
+  opacity: 0.7;
+  background: #f0f0f0;
+}
+
+.reward-card.insufficient-points {
+  opacity: 0.8;
+}
+
+.reward-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.reward-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reward-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+}
+
+.reward-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.reward-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.reward-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.reward-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.reward-points {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.points-label {
+  color: #666;
+  font-size: 14px;
+}
+
+.points-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.claim-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.claim-button.available {
+  background: #667eea;
+  color: white;
+}
+
+.claim-button.available:hover {
+  background: #5568d3;
+  transform: scale(1.05);
+}
+
+.claim-button.unavailable {
+  background: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.claim-button.claimed-button {
+  background: #4caf50;
+  color: white;
+  cursor: default;
+}
+
+.claim-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+

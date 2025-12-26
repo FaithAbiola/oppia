@@ -1,0 +1,385 @@
+.rewards-page {
+  min-height: 100vh;
+  background: #f9fafb;
+  display: flex;
+}
+
+.rewards-main {
+  flex: 1;
+  margin-left: 240px;
+  padding: 1rem;
+  min-height: 100vh;
+  background: #f9fafb;
+  overflow-y: auto;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .rewards-main {
+    padding: 2rem;
+    padding-top: 2rem;
+    min-height: 0;
+  }
+}
+
+.rewards-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.rewards-header {
+  margin-bottom: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #f9fafb;
+  padding-bottom: 8px;
+  padding-top: 12px;
+}
+
+@media (min-width: 1024px) {
+  .rewards-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  width: 100%;
+  background: #f9fafb;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1f2937;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
+
+.page-subtitle {
+  font-size: 16px;
+  color: rgb(75 85 99);
+  font-weight: 600;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.tabs-wrapper {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.tab-content-wrapper {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@media (min-width: 1024px) {
+  .tab-content-wrapper {
+    height: calc(100vh - 110px);
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .tab-content-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: none;
+  position: relative;
+}
+
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background: #9013fe;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.tab-button {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+
+.tab-button:hover:not(.active) {
+  background-color: #f3f4f6;
+  border-radius: 8px 8px 0 0;
+}
+
+.tab-button.active {
+  background-color: #9013fe0d !important;
+  color: #9013fe !important;
+  border-radius: 8px 8px 0 0 !important;
+  border: none !important;
+  border-bottom: none !important;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.error-banner {
+  background: #fee;
+  color: #c33;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-banner button {
+  background: none;
+  border: none;
+  color: #c33;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.rewards-journey,
+.earn-more-points,
+.redeem-rewards,
+.refer-earn-section-wrapper {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.rewards-journey {
+  margin-top: 24px;
+}
+
+.refer-earn-section-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin: 12px 0 20px 0;
+  border-left: 4px solid #9301fe;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  padding-left: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+.journey-cards {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 16px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .journey-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.journey-cards > * {
+  min-width: 0;
+  width: 100%;
+}
+
+.earn-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .earn-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.loading-state,
+.error-state,
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #8b5cf6;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-state p,
+.error-state p,
+.empty-state p {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.retry-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.retry-button:hover {
+  background: #7c3aed;
+}
+
+@media (max-width: 1024px) {
+  .journey-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .earn-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .journey-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .rewards-main {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .rewards-main {
+    padding: 1rem;
+  }
+
+  .header-top {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .journey-cards,
+  .earn-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .rewards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tab-button {
+    white-space: nowrap;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}

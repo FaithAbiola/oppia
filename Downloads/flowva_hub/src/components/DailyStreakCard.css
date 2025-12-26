@@ -1,0 +1,160 @@
+.daily-streak-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+  transition: all 0.2s;
+}
+
+.daily-streak-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.daily-streak-card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+  background: #eef2ff !important;
+  border: none;
+  border-bottom: 1px solid #f3f4f6;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.card-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: visible;
+  display: block;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.streak-display {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.streak-value {
+  font-size: 36px;
+  font-weight: 800;
+  color: #9013fe;
+  line-height: 1;
+  margin: 4px 0 8px 0;
+  font-family: inherit;
+}
+
+.calendar-week {
+  display: flex;
+  gap: 8px;
+  margin: 16px 1rem 0 1rem;
+  justify-content: center;
+}
+
+.day-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9ca3af;
+  background: #e5e7eb;
+  transition: all 0.2s;
+}
+
+.day-circle.today {
+  background: #e5e7eb;
+  border: 2px solid #9013fe;
+  color: #9ca3af;
+  box-shadow: inset 0 0 0 2px white;
+}
+
+.day-circle.claimed {
+  background: #70D6FF;
+  border: 4px solid rgb(165, 243, 252);
+  color: rgb(255, 255, 255);
+  box-shadow: none;
+}
+
+.streak-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 12px 1rem 12px 1rem;
+  text-align: center;
+}
+
+.claim-button {
+  width: calc(100% - 2rem);
+  margin: 0 1rem 1rem 1rem;
+  padding: 14px 24px !important;
+  background: #9013fe;
+  color: white;
+  border: none;
+  border-radius: 9999px !important;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.claim-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(144, 19, 254, 0.2);
+  border-radius: 9999px !important;
+}
+
+.claim-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  border-radius: 9999px !important;
+}
+
+.claim-button.claimed,
+.claim-button.claimed:disabled {
+  background: #d1d5db !important;
+  color: #6b7280 !important;
+  opacity: 1 !important;
+  cursor: not-allowed !important;
+  border-radius: 9999px !important;
+}
+
+.claim-button.claimed:hover,
+.claim-button.claimed:disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: #d1d5db !important;
+  color: #6b7280 !important;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+

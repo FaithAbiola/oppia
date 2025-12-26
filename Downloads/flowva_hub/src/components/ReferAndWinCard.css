@@ -1,0 +1,83 @@
+.refer-win-card {
+  background: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s;
+  width: 100%;
+  min-width: 0;
+}
+
+.refer-win-card:hover {
+  border-color: #9013fe;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: white !important;
+  border: none;
+  border-bottom: 1px solid #f3f4f6;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 0;
+}
+
+.refer-win-card .card-header {
+  background: white !important;
+}
+
+.refer-win-card .card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(228, 144, 230, 0.1) !important;
+  color: #9013fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+}
+
+.refer-win-card .card-title,
+.refer-win-card h3.card-title,
+.refer-win-card .card-header h3 {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  margin: 0 !important;
+  text-align: left;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #000000 !important;
+  margin: 0;
+  padding: 1rem !important;
+  font-weight: 600;
+  background: transparent;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  max-width: 100%;
+  display: block;
+}
+
+.refer-win-card .card-description {
+  color: #000000 !important;
+  padding: 1rem !important;
+}
+
+.card-description .text-purple {
+  color: #9013fe;
+}
+

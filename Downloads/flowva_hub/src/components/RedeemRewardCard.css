@@ -1,0 +1,112 @@
+.redeem-reward-card {
+  border: 1px solid #E9D4FF;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-linear;
+  cursor: pointer;
+}
+
+.redeem-reward-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.redeem-reward-card.locked {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.redeem-reward-card.coming-soon {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.reward-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  background: #E9D4FF;
+  color: #9013fe;
+}
+
+.reward-title {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #1f2937;
+}
+
+.reward-description {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #2D3748;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.reward-points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9013fe;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.reward-button {
+  width: 100%;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.reward-button.locked-button {
+  background: #d7e0ed;
+  color: white;
+  cursor: not-allowed;
+}
+
+.reward-button.coming-soon-button {
+  background: #d7e0ed;
+  color: white;
+  cursor: not-allowed;
+}
+
+.reward-button.claim-button {
+  background: #9013fe;
+  color: white;
+}
+
+.reward-button.claim-button:hover:not(:disabled) {
+  background: #7a0fd8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(144, 19, 254, 0.3);
+}
+
+.reward-button.claim-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.reward-button.claimed-button {
+  background: #10b981;
+  color: white;
+  cursor: not-allowed;
+}
+
